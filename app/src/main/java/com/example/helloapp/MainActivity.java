@@ -15,17 +15,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_layout);
-        TextView text = findViewById(R.id.header);
-        text.setText("Hello from Java code");
+        TextView text = findViewById(R.id.header1);
+        text.setText("Hello 1");
     }
 
     @SuppressLint("SetTextI18n")
     public void btnOnClicked(View view) {
-        TextView text = findViewById(R.id.header);
-        if(text.getText().equals("Hello from Java code")) {
-            text.setText("Hello from Button code");
+        TextView text = findViewById(R.id.header1);
+        if(text.getText().equals("Hello 1")) {
+            text.setText("Hello 2");
         } else {
-            text.setText("Hello from Java code");
+            text.setText("Hello 1");
         }
     }
 
